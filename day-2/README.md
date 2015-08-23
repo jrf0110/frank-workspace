@@ -35,3 +35,8 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
   - ...
 * [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 * [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+##To install
+
+* Sublime Package Manager
+* Add Sublime to Path to access terminal
