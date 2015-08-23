@@ -15,6 +15,12 @@
 
 With these basic primitivess, you can see how you could create almost anything.
 
+__Bootstrap CSS:__
+
+```
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
+```
+
 ## The basics of Programming (with JavaScript)
 
 * Flow of a program
