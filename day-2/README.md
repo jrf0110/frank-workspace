@@ -38,5 +38,7 @@ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
 
 ##To install
 
-* Sublime Package Manager
+* Sublime Package Manager (Install Before Zen)
 * Add Sublime to Path to access terminal
+* Zencoding Sublime Plugin
+*install chrome
