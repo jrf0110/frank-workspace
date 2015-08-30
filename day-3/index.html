@@ -2,10 +2,15 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <style type="text/css">
 
     #main-content {
       transition: opacity ease-out 0.3s;
+    }
+
+    .fadeout {
+      opacity: 0;
     }
 
     .col-a {
@@ -43,19 +48,26 @@
     </div>
 
     <script>
-      var togglerEL = document.getElementById('toggler');
-      var maincontentEL = document.getElementById('main-content');
+      // var togglerEL = document.getElementById('toggler');
+      // var maincontentEL = document.getElementById('main-content');
 
-      togglerEL.addEventListener('click', function( e ){
-        // maincontentEL.style.display = 'none'
+      // togglerEL.addEventListener('click', function( e ){
+      //   // maincontentEL.style.display = 'none'
 
-      if(maincontentEL.style.opacity === '0') {
-        maincontentEL.style.opacity = '';
-      } else {
-        maincontentEL.style.opacity = '0';
-      }
+      // if(maincontentEL.style.opacity === '0') {
+      //   maincontentEL.style.opacity = '';
+      // } else {
+      //   maincontentEL.style.opacity = '0';
+      // }
   
+      // });
+
+      var $main = $('#main-content');
+
+      $('#toggler').click(function(){
+        $main.toggleClass('fadeout');
       });
+
     </script>
 
   </body>
