@@ -3,18 +3,36 @@
   <head>
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script>window.module = { exports: {} };</script>
     <script src="/js/transposable-list.js"></script>
     <script src="/js/transposable-list-view.js"></script>
   </head>
   <body>
     <h1>Transposer</h1>
-    <div class="boxes">
-      <div class="box" style="background: red;"></div>
-      <div class="box" style="background: blue;"></div>
-      <div class="box" style="background: yellow;"></div>
-    </div>
+    <button id="leftbtn">left</button>
+    <button id="rightbtn">right</button>
+    <div class="boxes"></div>
     <script>
-      // Implement code
+      var leftbtn = $('#leftbtn');
+      var rightbtn = $('#rightbtn');
+      var colorList = TransposableList([
+        'blue', 'red', 'green', 'yellow', 'orange', 'black'  
+        ]);
+
+      leftbtn.click(function( e ){
+        colorList.transposeLeft()
+        colorListView.render();
+      });
+
+      rightbtn.click(function( e ){
+        colorList.transposeRight();
+        colorListView.render();
+      });
+    
+      var colorListView = TransposableListView($('.boxes'), colorList);
+
+      colorListView.render();
+
     </script>
   </body>
 </html>
