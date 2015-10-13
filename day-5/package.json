@@ -1,0 +1,17 @@
+{
+  "name": "day-5",
+  "version": "1.0.0",
+  "description": "Let's recall what we went over last time. We had a clean separation between models and views, and our `index.html` tied it all together.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  }
+}
